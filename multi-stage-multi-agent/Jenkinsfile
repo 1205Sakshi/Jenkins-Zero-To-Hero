@@ -6,7 +6,7 @@ pipeline {
         label 'node1'
       }
       steps {
-        sh 'mvn --version'
+        touch /tmp/myfile
       }
     }
     stage('Front-end') {
