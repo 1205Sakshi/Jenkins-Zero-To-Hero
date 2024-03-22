@@ -6,7 +6,7 @@ pipeline {
         label 'node1'
       }
       steps {
-        touch /tmp/myfile
+        sh 'touch /tmp/myfile'
       }
     }
     stage('Front-end') {
